@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/test-task/static/css/main.2b295da4.chunk.css",
+    "main.js": "/test-task/static/js/main.3437e6f1.chunk.js",
+    "main.js.map": "/test-task/static/js/main.3437e6f1.chunk.js.map",
+    "runtime-main.js": "/test-task/static/js/runtime-main.de6d40c1.js",
+    "runtime-main.js.map": "/test-task/static/js/runtime-main.de6d40c1.js.map",
+    "static/js/2.bbff2a5c.chunk.js": "/test-task/static/js/2.bbff2a5c.chunk.js",
+    "static/js/2.bbff2a5c.chunk.js.map": "/test-task/static/js/2.bbff2a5c.chunk.js.map",
+    "index.html": "/test-task/index.html",
+    "static/css/main.2b295da4.chunk.css.map": "/test-task/static/css/main.2b295da4.chunk.css.map",
+    "static/js/2.bbff2a5c.chunk.js.LICENSE.txt": "/test-task/static/js/2.bbff2a5c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/test-task/static/media/ProximaNova-Regular.bbb7cd21.ttf",
+    "static/media/arrow-read-more.a475324c.svg": "/test-task/static/media/arrow-read-more.a475324c.svg",
+    "static/media/arrow-review.bb7b21f6.svg": "/test-task/static/media/arrow-review.bb7b21f6.svg",
+    "static/media/ellipse.27075858.svg": "/test-task/static/media/ellipse.27075858.svg",
+    "static/media/img1.9da5020a.png": "/test-task/static/media/img1.9da5020a.png",
+    "static/media/img2.1d5d1685.png": "/test-task/static/media/img2.1d5d1685.png",
+    "static/media/img3.78ff462a.png": "/test-task/static/media/img3.78ff462a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de6d40c1.js",
+    "static/js/2.bbff2a5c.chunk.js",
+    "static/css/main.2b295da4.chunk.css",
+    "static/js/main.3437e6f1.chunk.js"
+  ]
+}

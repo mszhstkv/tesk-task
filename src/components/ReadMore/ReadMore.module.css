@@ -1,0 +1,32 @@
+.readMore {
+    grid-area: read-more;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    '. . .'
+    'read-more__button read-more__button read-more__button'
+    '. . .';
+}
+
+.readMoreButton{
+    grid-area: read-more__button;
+    border:none; 
+    padding:0; 
+    margin:0; 
+    color: #6527D9; 
+    background-color:transparent;
+    outline: none;
+    font-family: Proxima-Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.arrowContainer {
+    display: inline;
+    max-width: 20px;
+    height: auto;
+    text-align: center;
+}

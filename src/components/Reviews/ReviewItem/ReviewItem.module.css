@@ -1,0 +1,108 @@
+.reviewItemText {
+    position: relative;
+    bottom: 20px;
+    font-family: Proxima-Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.reviewItemNameAndInst {
+    margin-top: 32px;
+    
+}
+
+.reviewItemName {
+    font-family: Proxima-Nova-Light;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    
+    color: #FFFFFF;
+
+    /* grid-area: review-name; */
+}
+
+.reviewItemInst {
+    font-family: Proxima-Nova-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .reviewItemText {
+        font-size: 26px;
+    }
+    .reviewItemName {
+        font-size: 20px;
+    }
+    .reviewItemInst {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .reviewItemText {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .reviewItemText {
+        font-size: 18px;
+    }
+    .reviewItemName {
+        font-size: 16px;
+    }
+    .reviewItemInst {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviewItemText {
+        top:60px;
+    }
+    .reviewItemNameAndInst {
+        margin-top: 92px;
+    }
+}
+
+@media (max-width: 580px) {
+    .reviewItemNameAndInst {
+        margin-top: 150px;
+    }
+    .reviewItemText {
+        top: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .reviewItemNameAndInst {
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .reviewItemNameAndInst {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .reviewItemNameAndInst {
+        margin-top: 20px;
+    }
+    .reviewItemText {
+        font-size: 17.5px;
+    }
+}

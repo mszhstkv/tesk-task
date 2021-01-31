@@ -1,12 +1,10 @@
 .readMore {
     grid-area: read-more;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    '. . .'
-    'read-more__button read-more__button read-more__button'
-    '. . .';
+    'read-more__button';
 }
 
 .readMoreButton{
@@ -29,4 +27,18 @@
     max-width: 20px;
     height: auto;
     text-align: center;
+}
+
+@media (max-width: 580px) {
+    .readMoreButton {
+        font-size: 22px;
+        line-height: 120%;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 320px) {
+    .readMoreButton {
+        font-size: 18px;
+    }
 }

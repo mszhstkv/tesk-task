@@ -1,6 +1,13 @@
+.reviewItemTextField {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(auto, 300px) 1fr;
+    grid-template-areas: 
+    'textfield'
+    'user-info';
+}
 .reviewItemText {
-    position: relative;
-    bottom: 20px;
+    grid-area: textfield;
     font-family: Proxima-Nova;
     font-style: normal;
     font-weight: normal;
@@ -8,11 +15,12 @@
     line-height: 120%;
     letter-spacing: 0.8px;
     color: #FFFFFF;
+    overflow: auto;
 }
 
 .reviewItemNameAndInst {
-    margin-top: 32px;
-    
+    grid-area: user-info;
+    margin-top: 32px;    
 }
 
 .reviewItemName {
@@ -22,10 +30,7 @@
     font-size: 24px;
     line-height: 130%;
     letter-spacing: 0.2px;
-    
     color: #FFFFFF;
-
-    /* grid-area: review-name; */
 }
 
 .reviewItemInst {
@@ -50,15 +55,10 @@
     }
 }
 
-@media (max-width: 900px) {
-    .reviewItemText {
-        font-size: 22px;
-    }
-}
 
 @media (max-width: 700px) {
     .reviewItemText {
-        font-size: 18px;
+        font-size: 22px;
     }
     .reviewItemName {
         font-size: 16px;
@@ -68,41 +68,46 @@
     }
 }
 
-@media (max-width: 600px) {
-    .reviewItemText {
-        top:60px;
-    }
-    .reviewItemNameAndInst {
-        margin-top: 92px;
-    }
-}
-
 @media (max-width: 580px) {
     .reviewItemNameAndInst {
-        margin-top: 150px;
+        align-self: flex-end;
     }
+
+    .reviewItemTextField {
+        grid-template-rows: minmax(auto, 350px) minmax(auto, 60px);
+    }
+
+    .reviewItemNameAndInst {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
     .reviewItemText {
-        top: 0px;
+        font-family: Proxima-Nova-Light;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0.2px;
+    }
+
+    .reviewItemName {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .reviewItemInst {
+        font-size: 20px;
+        line-height: 140%;
     }
 }
 
-@media (max-width: 450px) {
-    .reviewItemNameAndInst {
-        margin-top: 110px;
+@media (max-width: 320px) {
+    .reviewItemName {
+        font-size: 16px;
     }
-}
 
-@media (max-width: 400px) {
-    .reviewItemNameAndInst {
-        margin-top: 50px;
-    }
-}
-
-@media (max-width: 360px) {
-    .reviewItemNameAndInst {
-        margin-top: 20px;
-    }
-    .reviewItemText {
-        font-size: 17.5px;
+    .reviewItemInst {
+        font-size: 16px;
     }
 }

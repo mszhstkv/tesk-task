@@ -131,12 +131,12 @@
     border-radius: 75px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .reviewsContainer {
-        grid-template-areas: 
-        'review-item review-item review-item'
-        'review-item review-item review-item'
-        'review-name-inst . button';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(auto, 100px) minmax(auto, 315px) minmax(auto, 1fr);
+        margin: 10px 12px 0 12px;
+        padding: 0 20px 0 20px;
     }
 
     .circle {
@@ -151,8 +151,7 @@
         
         padding: 20px 16px 0 16px;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr 1fr;
-        
+        grid-template-rows: minmax(auto,3fr) minmax(auto, 80px);
         
         grid-template-areas: 
         'review-item'
@@ -171,11 +170,5 @@
         justify-self: flex-start;
         align-self: end;
         padding-bottom: 16px;
-    }
-}
-
-@media (max-width: 360px) {
-    .reviewsContainer  {
-        padding: 10px 16px 0 16px;
     }
 }

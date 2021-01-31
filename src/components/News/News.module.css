@@ -3,9 +3,8 @@
     margin: auto;
     display: grid;
     grid-area: news-container;
-    box-sizing: border-box;
     margin: 0px 12px 0 12px;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: minmax(auto, max);
     grid-column-gap: 12px;
     grid-row-gap: 12px;

@@ -49,7 +49,7 @@ a {
 @media (max-width: 580px) {
 
     .item {
-        grid-template-rows: 3fr max(104px);
+        grid-template-rows: 3fr max(120px);
     }
     .image {
         justify-self: auto;
@@ -63,6 +63,12 @@ a {
         font-size: 22px;
         line-height: 120%;
         opacity: 0.8;
+    }
+}
+
+@media (max-width: 400px) {
+    .text {
+        font-size: 20px;
     }
 }
 

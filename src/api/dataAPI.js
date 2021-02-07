@@ -1,7 +1,7 @@
 import * as axios from "axios"
 
 const instance = axios.create({
-    baseURL:"https://mszhstkv.github.io/test-task/",         // for local: http://localhost:3000/test-task/ || for gh pages: https://mszhstkv.github.io/test-task/ \\
+    baseURL:"http://localhost:3000/test-task/",         // for local: http://localhost:3000/test-task/ || for gh pages: https://mszhstkv.github.io/test-task/ \\
     headers: {
         'Access-Control-Allow-Origin': '*',
     }

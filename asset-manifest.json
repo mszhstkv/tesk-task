@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-task/static/css/main.fa2e55ff.chunk.css",
+    "main.css": "/test-task/static/css/main.76f0e8ed.chunk.css",
     "main.js": "/test-task/static/js/main.ed60609c.chunk.js",
     "main.js.map": "/test-task/static/js/main.ed60609c.chunk.js.map",
     "runtime-main.js": "/test-task/static/js/runtime-main.de6d40c1.js",
@@ -8,7 +8,7 @@
     "static/js/2.ea388947.chunk.js": "/test-task/static/js/2.ea388947.chunk.js",
     "static/js/2.ea388947.chunk.js.map": "/test-task/static/js/2.ea388947.chunk.js.map",
     "index.html": "/test-task/index.html",
-    "static/css/main.fa2e55ff.chunk.css.map": "/test-task/static/css/main.fa2e55ff.chunk.css.map",
+    "static/css/main.76f0e8ed.chunk.css.map": "/test-task/static/css/main.76f0e8ed.chunk.css.map",
     "static/js/2.ea388947.chunk.js.LICENSE.txt": "/test-task/static/js/2.ea388947.chunk.js.LICENSE.txt",
     "static/media/App.css": "/test-task/static/media/ProximaNova-Regular.bbb7cd21.ttf",
     "static/media/arrow-read-more.a475324c.svg": "/test-task/static/media/arrow-read-more.a475324c.svg",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.de6d40c1.js",
     "static/js/2.ea388947.chunk.js",
-    "static/css/main.fa2e55ff.chunk.css",
+    "static/css/main.76f0e8ed.chunk.css",
     "static/js/main.ed60609c.chunk.js"
   ]
 }

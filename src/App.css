@@ -47,9 +47,13 @@
     grid-area: news-container;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .app-wrapper {
-        grid-template-rows: minmax(auto, 600px) minmax(auto, 218px) 2fr minmax(auto, 152px);
+        grid-template-rows: minmax(auto, 520px) minmax(auto, 150px) 2fr minmax(auto, 140px);
+    }
+
+    .header-news__text {
+        font-size: 40px;
     }
 }
 

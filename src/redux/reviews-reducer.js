@@ -1,4 +1,4 @@
-import feedbackData from '../json/feedback_data.json'
+import { dataAPI } from '../api/dataAPI';
 
 const SET_FEEDBACK = 'SET_FEEDBACK';
 const SET_BACK_PAGE = 'SET_BACK_PAGE';
@@ -26,9 +26,9 @@ const reviewsReducer = (state = initialState, action) => {
         case SET_FORWARD_PAGE:
             return {
                 ...state,
-                currentPage: action.currentPage < 7
+                currentPage: action.currentPage < state.reviews.length
                     ? action.currentPage + 1
-                    : action.currentPage = 7
+                    : action.currentPage = state.reviews.length
             }
         default:
             return state;
@@ -40,11 +40,11 @@ export const setReviews = (reviews) => ({ type: SET_FEEDBACK, reviews });
 export const setBackPage = (currentPage) => ({ type: SET_BACK_PAGE, currentPage });
 export const setForwardPage = (currentPage) => ({ type: SET_FORWARD_PAGE, currentPage });
 
-export const getFeedBackData = () => {
-
-    return (dispatch) => {
-        dispatch(setReviews(feedbackData));
-    };
+export const getFeedBackData = () => (dispatch) => {
+    dataAPI.getFeedBack()
+        .then(data => {
+            dispatch(setReviews(data));
+        });
 };
 
 export const getBackPage = (currentPage) => {

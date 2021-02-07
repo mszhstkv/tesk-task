@@ -2,7 +2,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr max(152px);
+    grid-template-rows: 3fr max(200px);
     background-color: white;
     border-radius: 12px;
     grid-template-areas: 
@@ -22,14 +22,15 @@
 
 .text {
     margin: 20px 40px 20px 40px;
-    text-align: center;
-    font-family: Proxima-Nova;
+    font-family: Proxima-Nova-Light;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 130%;
     grid-area: textNews;
-
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 a {
@@ -38,14 +39,10 @@ a {
 }
 
 @media (max-width: 768px) {
-    .item {
-        grid-template-rows: minmax(204px, 3fr) max(152px);
-    }
-
+    
     .text {
-        margin: 15px 8px 20px 8px;
         font-weight: normal;
-        font-size: 21px;
+        font-size: 22px;
     }
 }
 
@@ -60,6 +57,7 @@ a {
     }
 
     .text {
+        justify-content: center;
         margin: 20px 8px 20px 8px;
         font-weight: normal;
         font-size: 22px;

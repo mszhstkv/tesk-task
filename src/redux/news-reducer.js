@@ -1,4 +1,3 @@
-import blogPostsData from '../json/blog_posts.json'
 import imageDOne from '../assets/image/desktop/img1.png'
 import imageDOne2x from '../assets/image/desktop/img1@2x.png'
 import imageDOne3x from '../assets/image/desktop/img1@3x.png'
@@ -17,7 +16,7 @@ import imageDThree3x from '../assets/image/desktop/img3@3x.png'
 import imageMThree from '../assets/image/mobile/post3.png'
 import imageMThree2x from '../assets/image/mobile/post3@2x.png'
 import imageMThree3x from '../assets/image/mobile/post3@3x.png'
-
+import { dataAPI } from '../api/dataAPI'
 
 const READ_MORE = 'READ_MORE';
 
@@ -65,11 +64,12 @@ const newsReducer = (state = initialState, action) => {
 
 export const setReadMore = (news, readMoreToggle) => ({ type: READ_MORE, news, readMoreToggle });
 
-export const getblogPostsData = () => {
+export const getblogPostsData = () => (dispatch) => {
 
-    return (dispatch) => {
-        dispatch(setReadMore(blogPostsData));
-    };
+    dataAPI.getBlogPost()
+        .then(data => {
+            dispatch(setReadMore(data));
+        });
 };
 
 export default newsReducer;

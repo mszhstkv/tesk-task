@@ -55,24 +55,24 @@
     }
 }
 
-
-@media (max-width: 700px) {
-    .reviewItemText {
-        font-size: 22px;
-    }
-    .reviewItemName {
-        font-size: 16px;
-    }
-    .reviewItemInst {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 580px) {
+@media (max-width: 950px) {
     .reviewItemNameAndInst {
         align-self: flex-end;
     }
 
+    .reviewItemTextField {
+        grid-template-rows: minmax(auto, 350px) max(40px);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .reviewItemText {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 580px) {
     .reviewItemTextField {
         grid-template-rows: minmax(auto, 350px) minmax(auto, 60px);
     }
